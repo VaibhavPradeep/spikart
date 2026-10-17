@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spikart"
+version = "0.1.1"
+description = "Spiking Neural Network research library using Adaptive Resonance Theory and DPP slot allocation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "spikart contributors" }
+]
+keywords = [
+    "spiking-neural-networks",
+    "snn",
+    "adaptive-resonance-theory",
+    "art",
+    "dpp",
+    "memory-engine",
+    "neuromorphic"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "numpy>=1.20.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+experiments = ["matplotlib"]
+
+[project.urls]
+"Homepage" = "https://github.com/VaibhavPradeep/spikart"
+"Source Code" = "https://github.com/VaibhavPradeep/spikart"
+
+[tool.setuptools.packages.find]
+where = ["src"]
